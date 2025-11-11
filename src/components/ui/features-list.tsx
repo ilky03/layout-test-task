@@ -35,7 +35,7 @@ type FeatureItemProps = {
 
 export const FeatureItem: FC<FeatureItemProps> = ({ icon: Icon, title }) => {
   return (
-    <article className="grid grid-cols-[auto_1fr] items-center gap-3">
+    <article className="grid grid-cols-[auto_1fr] items-center gap-2">
       <Icon className="text-primary size-12 h-full" />
       <h4 className="text-2xl font-extrabold">{title}</h4>
     </article>
