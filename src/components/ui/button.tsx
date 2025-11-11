@@ -18,7 +18,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <Comp
       className={clsx(
-        "flex flex-row items-center justify-center px-6 py-3 font-bold",
+        "flex flex-row items-center justify-center px-6 py-3 font-bold cursor-pointer",
         {
           "bg-primary text-white": variant === "primary",
           "text-primary border-2 border-primary": variant === "outline",

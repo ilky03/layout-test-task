@@ -1,8 +1,16 @@
 import clsx from "clsx";
 import type { FC, PropsWithChildren } from "react";
 
-export const Menu: FC<PropsWithChildren> = ({ children }) => {
-  return <ul className="flex flex-row items-center gap-6">{children}</ul>;
+type MenuProps = PropsWithChildren<{
+  className?: string;
+}>;
+
+export const Menu: FC<MenuProps> = ({ children, className }) => {
+  return (
+    <ul className={clsx("flex flex-row items-center gap-6", className)}>
+      {children}
+    </ul>
+  );
 };
 
 type MenuLinkProps = PropsWithChildren<{

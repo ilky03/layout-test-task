@@ -1,8 +1,7 @@
-import { Aside } from "./layouts/Aside";
-import { Footer } from "./layouts/Footer";
-import { Header } from "./layouts/Header";
-import { Main } from "./layouts/Main";
-import { Nav } from "./layouts/Nav";
+import { Footer } from "./layouts/footer";
+import { Header } from "./layouts/header";
+import { Main } from "./layouts/main";
+import { Nav } from "./layouts/nav";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
       <Nav />
       <Header />
       <Main />
-      <Aside />
       <Footer />
     </>
   );
